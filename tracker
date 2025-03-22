@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Tracker</title>
   <style>
-    body { font-family: sans-serif; margin: 0; padding: 0; }
+    body { font-family: sans-serif; margin: 0; padding: 0; font-kerning: auto;}
     .tabs { display: flex; }
     .tab-btn {
       flex: 1;
@@ -14,13 +14,13 @@
       background: #eee;
       cursor: pointer;
     }
-    .tab-btn.active { background: #ccc; }
+    .tab-btn.active { background: #ffd11e; }
     .tab-content { display: none; padding: 1em; }
     .tab-content.active { display: block; }
     input[type="checkbox"] { transform: scale(1.2); margin-right: 8px; }
 
     .accordion {
-      background-color: #f1f1f1;
+      background-color: #ffefb1;
       cursor: pointer;
       padding: 1em;
       width: 100%;
@@ -31,7 +31,7 @@
       font-weight: bold;
     }
     .accordion:hover, .accordion.active {
-      background-color: #ddd;
+      background-color: #fff9e2;
     }
     .panel {
       padding: 0 1em;
@@ -54,6 +54,7 @@
     <div class="tab-btn active" data-tab="tracker">Meal & Activity Tracker</div>
     <div class="tab-btn" data-tab="grocery">Weekly Grocery List</div>
     <div class="tab-btn" data-tab="mealprep">Sunday Meal Prep</div>
+    <div class="tab-btn" data-tab="recipes">Recipes</div>
   </div>
 
   <div class="tab-content active" id="tracker">
@@ -93,7 +94,7 @@
     <label><input type="checkbox" id="w1-sat-x"> Exercise: 5K run</label><br>
     <h3>Sunday, March 30</h3>
     <label><input type="checkbox" id="w1-sun-b"> Breakfast: Almond Butter & Banana Protein Smoothie (28g protein)</label><br>
-    <label><input type="checkbox" id="w1-sun-l"> Lunch: Beef & Black Bean Pitta Pocket (44g protein)</label><br>
+    <label><input type="checkbox" id="w1-sun-l"> Lunch: Beef & Black Bean pita Pocket (44g protein)</label><br>
     <label><input type="checkbox" id="w1-sun-d"> Dinner: Beef & Quinoa Stir-Fry with Vegetables (45g protein)</label><br>
     <label><input type="checkbox" id="w1-sun-x"> Exercise: Rest day</label><br>
   </div>
@@ -102,19 +103,19 @@
   <div class="panel">
     <h3>Monday, March 31</h3>
     <label><input type="checkbox" id="w2-mon-b"> Breakfast: Almond Butter & Banana Protein Smoothie (28g protein) Repeat</label><br>
-    <label><input type="checkbox" id="w2-mon-l"> Lunch: Beef & Black Bean Pitta Pocket (44g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-mon-l"> Lunch: Beef & Black Bean pita Pocket (44g protein) Repeat</label><br>
     <label><input type="checkbox" id="w2-mon-d"> Dinner: Beef & Quinoa Stir-Fry with Vegetables (45g protein) Repeat</label><br>
     <label><input type="checkbox" id="w2-mon-x"> Exercise: 30-minute mobility routine</label><br>
 
     <h3>Tuesday, April 1</h3>
     <label><input type="checkbox" id="w2-tue-b"> Breakfast: Coconut Yogurt with Protein & Granola (27g protein)</label><br>
-    <label><input type="checkbox" id="w2-tue-l"> Lunch: Spicy Tofu & Chickpea Pitta Pocket (36g protein)</label><br>
+    <label><input type="checkbox" id="w2-tue-l"> Lunch: Spicy Tofu & Chickpea pita Pocket (36g protein)</label><br>
     <label><input type="checkbox" id="w2-tue-d"> Dinner: Tofu & Chickpea Curry with Basmati Rice (38g protein)</label><br>
     <label><input type="checkbox" id="w2-tue-x"> Exercise: 5K run</label><br>
 
     <h3>Wednesday, April 2</h3>
     <label><input type="checkbox" id="w2-wed-b"> Breakfast: Coconut Yogurt with Protein & Granola (27g protein) Repeat</label><br>
-    <label><input type="checkbox" id="w2-wed-l"> Lunch: Spicy Tofu & Chickpea Pitta Pocket (36g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-wed-l"> Lunch: Spicy Tofu & Chickpea pita Pocket (36g protein) Repeat</label><br>
     <label><input type="checkbox" id="w2-wed-d"> Dinner: Tofu & Chickpea Curry with Basmati Rice (38g protein) Repeat</label><br>
     <label><input type="checkbox" id="w2-wed-x"> Exercise: 30-minute mobility routine</label><br>
 
@@ -183,7 +184,7 @@
 
     <h3>Sunday, April 13</h3>
     <label><input type="checkbox" id="w2-sun-b"> Breakfast: Almond Butter & Banana Protein Smoothie (28g protein)</label><br>
-    <label><input type="checkbox" id="w2-sun-l"> Lunch: Beef & Black Bean Pitta Pocket (44g protein)</label><br>
+    <label><input type="checkbox" id="w2-sun-l"> Lunch: Beef & Black Bean pita Pocket (44g protein)</label><br>
     <label><input type="checkbox" id="w2-sun-d"> Dinner: Beef & Quinoa Stir-Fry with Vegetables (45g protein)</label><br>
     <label><input type="checkbox" id="w2-sun-x"> Exercise: Rest day</label><br>
   </div>
@@ -198,7 +199,7 @@
 
     <h3>Tuesday, April 15</h3>
     <label><input type="checkbox" id="w2-tue-b"> Breakfast: Chia Pudding with Protein Powder & Berries (28g protein)</label><br>
-    <label><input type="checkbox" id="w2-tue-l"> Lunch: Beef & Black Bean Pitta Pocket (44g protein)</label><br>
+    <label><input type="checkbox" id="w2-tue-l"> Lunch: Beef & Black Bean pita Pocket (44g protein)</label><br>
     <label><input type="checkbox" id="w2-tue-d"> Dinner: TBaked Salmon with Roasted Sweet Potatoes & Asparagus (48g protein)</label><br>
     <label><input type="checkbox" id="w2-tue-x"> Exercise: 5K run</label><br>
 
@@ -216,7 +217,7 @@
 
     <h3>Friday, April 18</h3>
     <label><input type="checkbox" id="w2-fri-b"> Breakfast: Peanut Butter & Banana Overnight Oats (26g protein)</label><br>
-    <label><input type="checkbox" id="w2-fri-l"> Lunch: Spicy Tofu & Chickpea Pitta Pocket (36g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-l"> Lunch: Spicy Tofu & Chickpea pita Pocket (36g protein)</label><br>
     <label><input type="checkbox" id="w2-fri-d"> Dinner: Beef & Quinoa Stir-Fry with Vegetables (45g protein)</label><br>
     <label><input type="checkbox" id="w2-fri-x"> Exercise: 30-minute mobility routine</label><br>
 
@@ -267,7 +268,7 @@
     <label><input type="checkbox" id="w1-sat-x"> Exercise: 5K run</label><br>
     <h3>Sunday, April 27</h3>
     <label><input type="checkbox" id="w1-sun-b"> Breakfast: Almond Butter & Banana Protein Smoothie (28g protein)</label><br>
-    <label><input type="checkbox" id="w1-sun-l"> Lunch: Beef & Black Bean Pitta Pocket (44g protein)</label><br>
+    <label><input type="checkbox" id="w1-sun-l"> Lunch: Beef & Black Bean pita Pocket (44g protein)</label><br>
     <label><input type="checkbox" id="w1-sun-d"> Dinner: Beef & Quinoa Stir-Fry with Vegetables (45g protein)</label><br>
     <label><input type="checkbox" id="w1-sun-x"> Exercise: Rest day</label><br>
   </div>
@@ -276,19 +277,19 @@
  <div class="panel">
     <h3>Monday, April 28</h3>
     <label><input type="checkbox" id="w2-mon-b"> Breakfast: Almond Butter & Banana Protein Smoothie (28g protein) Repeat</label><br>
-    <label><input type="checkbox" id="w2-mon-l"> Lunch: Beef & Black Bean Pitta Pocket (44g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-mon-l"> Lunch: Beef & Black Bean pita Pocket (44g protein) Repeat</label><br>
     <label><input type="checkbox" id="w2-mon-d"> Dinner: Beef & Quinoa Stir-Fry with Vegetables (45g protein) Repeat</label><br>
     <label><input type="checkbox" id="w2-mon-x"> Exercise: 30-minute mobility routine</label><br>
 
     <h3>Tuesday, April 29</h3>
     <label><input type="checkbox" id="w2-tue-b"> Breakfast: Coconut Yogurt with Protein & Granola (27g protein)</label><br>
-    <label><input type="checkbox" id="w2-tue-l"> Lunch: Spicy Tofu & Chickpea Pitta Pocket (36g protein)</label><br>
+    <label><input type="checkbox" id="w2-tue-l"> Lunch: Spicy Tofu & Chickpea pita Pocket (36g protein)</label><br>
     <label><input type="checkbox" id="w2-tue-d"> Dinner: Tofu & Chickpea Curry with Basmati Rice (38g protein)</label><br>
     <label><input type="checkbox" id="w2-tue-x"> Exercise: 5K run</label><br>
 
     <h3>Wednesday, April 30</h3>
     <label><input type="checkbox" id="w2-wed-b"> Breakfast: Coconut Yogurt with Protein & Granola (27g protein) Repeat</label><br>
-    <label><input type="checkbox" id="w2-wed-l"> Lunch: Spicy Tofu & Chickpea Pitta Pocket (36g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-wed-l"> Lunch: Spicy Tofu & Chickpea pita Pocket (36g protein) Repeat</label><br>
     <label><input type="checkbox" id="w2-wed-d"> Dinner: Tofu & Chickpea Curry with Basmati Rice (38g protein) Repeat</label><br>
     <label><input type="checkbox" id="w2-wed-x"> Exercise: 30-minute mobility routine</label><br>
 
@@ -357,7 +358,7 @@
 
     <h3>Sunday, May 11</h3>
     <label><input type="checkbox" id="w2-sun-b"> Breakfast: Almond Butter & Banana Protein Smoothie (28g protein)</label><br>
-    <label><input type="checkbox" id="w2-sun-l"> Lunch: Beef & Black Bean Pitta Pocket (44g protein)</label><br>
+    <label><input type="checkbox" id="w2-sun-l"> Lunch: Beef & Black Bean pita Pocket (44g protein)</label><br>
     <label><input type="checkbox" id="w2-sun-d"> Dinner: Beef & Quinoa Stir-Fry with Vegetables (45g protein)</label><br>
     <label><input type="checkbox" id="w2-sun-x"> Exercise: Rest day</label><br>
   </div>
@@ -373,7 +374,7 @@
 
     <h3>Tuesday, May 13</h3>
     <label><input type="checkbox" id="w2-tue-b"> Breakfast: Chia Pudding with Protein Powder & Berries (28g protein)</label><br>
-    <label><input type="checkbox" id="w2-tue-l"> Lunch: Beef & Black Bean Pitta Pocket (44g protein)</label><br>
+    <label><input type="checkbox" id="w2-tue-l"> Lunch: Beef & Black Bean pita Pocket (44g protein)</label><br>
     <label><input type="checkbox" id="w2-tue-d"> Dinner: TBaked Salmon with Roasted Sweet Potatoes & Asparagus (48g protein)</label><br>
     <label><input type="checkbox" id="w2-tue-x"> Exercise: 5K run</label><br>
 
@@ -391,7 +392,7 @@
 
     <h3>Friday, May 16</h3>
     <label><input type="checkbox" id="w2-fri-b"> Breakfast: Peanut Butter & Banana Overnight Oats (26g protein)</label><br>
-    <label><input type="checkbox" id="w2-fri-l"> Lunch: Spicy Tofu & Chickpea Pitta Pocket (36g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-l"> Lunch: Spicy Tofu & Chickpea pita Pocket (36g protein)</label><br>
     <label><input type="checkbox" id="w2-fri-d"> Dinner: Beef & Quinoa Stir-Fry with Vegetables (45g protein)</label><br>
     <label><input type="checkbox" id="w2-fri-x"> Exercise: 30-minute mobility routine</label><br>
 
@@ -438,7 +439,7 @@
         <label><input type="checkbox" id="w1-g-4"> Black beans (1 can)</label><br>
         <label><input type="checkbox" id="w1-g-5"> Whole wheat wraps (4-6)</label><br>
         <label><input type="checkbox" id="w1-g-6"> Whole wheat bagels (2)</label><br>
-        <label><input type="checkbox" id="w1-g-7"> Whole wheat pittas (2)</label><br>
+        <label><input type="checkbox" id="w1-g-7"> Whole wheat pitas (2)</label><br>
 
         <h3>Fruits & Vegetables</h3>
         <label><input type="checkbox" id="w1-f-1"> Bananas (4)</label><br>
@@ -540,7 +541,7 @@
         <label><input type="checkbox" id="w4-g-6"> Chickpeas (1 can)</label><br>
         <label><input type="checkbox" id="w4-g-7"> Whole wheat wraps (4-6)</label><br>
         <label><input type="checkbox" id="w4-g-8"> Whole wheat bagels (2)</label><br>
-        <label><input type="checkbox" id="w4-g-9"> Whole wheat pittas (2)</label><br>
+        <label><input type="checkbox" id="w4-g-9"> Whole wheat pitas (2)</label><br>
 
         <h3>Fruits & Vegetables</h3>
         <label><input type="checkbox" id="w4-f-1"> Bananas (4)</label><br>
@@ -587,7 +588,7 @@
         <label><input type="checkbox" id="w5-g-4"> Black beans (1 can)</label><br>
         <label><input type="checkbox" id="w5-g-5"> Whole wheat wraps (4-6)</label><br>
         <label><input type="checkbox" id="w5-g-6"> Whole wheat bagels (2)</label><br>
-        <label><input type="checkbox" id="w5-g-7"> Whole wheat pittas (2)</label><br>
+        <label><input type="checkbox" id="w5-g-7"> Whole wheat pitas (2)</label><br>
 
         <h3>Fruits & Vegetables</h3>
         <label><input type="checkbox" id="w5-f-1"> Bananas (4)</label><br>
@@ -681,7 +682,7 @@
   <label><input type="checkbox" id="w7-g-4"> Black beans (1 can)</label><br>
   <label><input type="checkbox" id="w7-g-5"> Whole wheat wraps (4-6)</label><br>
   <label><input type="checkbox" id="w7-g-6"> Whole wheat bagels (2)</label><br>
-  <label><input type="checkbox" id="w7-g-7"> Whole wheat pittas (2)</label><br>
+  <label><input type="checkbox" id="w7-g-7"> Whole wheat pitas (2)</label><br>
 
   <h3>Fruits & Vegetables</h3>
   <label><input type="checkbox" id="w7-f-1"> Bananas (4)</label><br>
@@ -730,7 +731,7 @@
   <label><input type="checkbox" id="w8-g-6"> Chickpeas (1 can)</label><br>
   <label><input type="checkbox" id="w8-g-7"> Whole wheat wraps (4-6)</label><br>
   <label><input type="checkbox" id="w8-g-8"> Whole wheat bagels (2)</label><br>
-  <label><input type="checkbox" id="w8-g-9"> Whole wheat pittas (2)</label><br>
+  <label><input type="checkbox" id="w8-g-9"> Whole wheat pitas (2)</label><br>
 
   <h3>Fruits & Vegetables</h3>
   <label><input type="checkbox" id="w8-f-1"> Bananas (4)</label><br>
@@ -829,6 +830,619 @@
     </ul>
     <p>Some meals (like wraps) are best assembled the day of. Prep the components ahead to keep textures fresh.</p>
   </div>
+
+
+
+  <div class="tab-content active" id="recipes">
+  <h1>Recipes</h1>
+
+
+<section>
+  <h2>Breakfasts (Protein over 25g)</h2>
+  <p>Here's a list of 5 high-protein, sweet, dairy-free breakfast ideas that are simple, less than 5 ingredients and can be meal prepped for 4 days.</p>
+  <p>Each one has over 25g of protein per serving and includes the calorie intake and weight in grams for each ingredient.</p>
+
+
+    <button class="accordion">Peanut Butter & Banana Overnight Oats</button>
+      <div class="panel">
+  <article>
+    <h4>Ingredients (for 1 serving):</h4>
+    <ul>
+      <li>Rolled oats (40g)</li>
+      <li>Unsweetened almond milk (200ml)</li>
+      <li>Peanut butter (32g)</li>
+      <li>Banana (60g)</li>
+      <li>Protein powder (vanilla, 1 scoop, 30g)</li>
+    </ul>
+    <p><strong>Total Protein:</strong> 26g</p>
+    <p><strong>Total Calories:</strong> 400</p>
+    <h4>Prep Instructions:</h4>
+    <p>In a mason jar or container, combine oats, almond milk, peanut butter, and protein powder. Stir to mix well, then top with sliced banana. Let it sit overnight in the fridge. <em>Enjoy the next morning!</em></p>
+  </article>
+</div>
+
+
+ <button class="accordion">Chia Pudding with Protein Powder & Berries</button>
+      <div class="panel">
+  <article>
+    <h4>Ingredients (for 1 serving):</h4>
+    <ul>
+      <li>Chia seeds (30g)</li>
+      <li>Unsweetened almond milk (200ml)</li>
+      <li>Protein powder (vanilla, 1 scoop, 30g)</li>
+      <li>Mixed berries (50g)</li>
+    </ul>
+    <p><strong>Total Protein:</strong> 28g</p>
+    <p><strong>Total Calories:</strong> 350</p>
+    <h4>Prep Instructions:</h4>
+    <p>Mix chia seeds, almond milk, and protein powder in a bowl or jar. Let it set in the fridge overnight or for at least 2 hours. Top with fresh mixed berries before serving.</p>
+  </article>
+</div>
+
+<button class="accordion">Almond Butter & Banana Protein Smoothie</button>
+      <div class="panel">
+  <article>
+    <h4>Ingredients (for 1 serving):</h4>
+    <ul>
+      <li>Banana (120g)</li>
+      <li>Unsweetened almond milk (200ml)</li>
+      <li>Almond butter (16g)</li>
+      <li>Protein powder (vanilla, 1 scoop, 30g)</li>
+    </ul>
+    <p><strong>Total Protein:</strong> 28g</p>
+    <p><strong>Total Calories:</strong> 350</p>
+    <h4>Prep Instructions:</h4>
+    <p>Blend all ingredients together until smooth. Pour into a glass and enjoy immediately! You can pre-portion everything except the almond milk into freezer bags for easy blending.</p>
+  </article>
+</div>
+
+<button class="accordion">Coconut Yogurt with Protein & Granola</button>
+      <div class="panel">
+  <article>
+    <h4>Ingredients (for 1 serving):</h4>
+    <ul>
+      <li>Coconut yogurt (unsweetened, 150g)</li>
+      <li>Protein powder (vanilla, 1 scoop, 30g)</li>
+      <li>Maple syrup (20g)</li>
+      <li>Almonds (15g)</li>
+    </ul>
+    <p><strong>Total Protein:</strong> 27g</p>
+    <p><strong>Total Calories:</strong> 340</p>
+    <h4>Prep Instructions:</h4>
+    <p>Stir the protein powder into the coconut yogurt until fully incorporated. Drizzle with maple syrup. Top with chopped almonds. If meal prepping, store the yogurt and protein mix separately from the toppings.</p>
+  </article>
+</div>
+
+<button class="accordion">Chocolate Protein Pudding</button>
+      <div class="panel">
+  <article>
+    <h4>Ingredients (for 1 serving):</h4>
+    <ul>
+      <li>Unsweetened almond milk (150ml)</li>
+      <li>Protein powder (chocolate, 1 scoop, 30g)</li>
+      <li>Chia seeds (20g)</li>
+      <li>Maple syrup (20g)</li>
+    </ul>
+    <p><strong>Total Protein:</strong> 26g</p>
+    <p><strong>Total Calories:</strong> 300</p>
+    <h4>Prep Instructions:</h4>
+    <p>In a bowl, combine almond milk, protein powder, chia seeds, and maple syrup. Stir until smooth, then let it sit in the fridge for at least 2 hours (or overnight) to thicken. Enjoy as a thick, pudding-like breakfast!</p>
+  </article>
+</div>
+
+<button class="accordion">Turkey & Spinach Egg Muffins</button>
+      <div class="panel">
+<article>
+    <h4>Ingredients (for 1 serving):</h4>
+    <ul>
+      <li>Rolled oats (40g)</li>
+      <li>Unsweetened almond milk (200ml)</li>
+      <li>Peanut butter (32g)</li>
+      <li>Banana (60g)</li>
+      <li>Protein powder (vanilla, 1 scoop, 30g)</li>
+    </ul>
+    <p><strong>Total Protein:</strong> 32g</p>
+    <p><strong>Total Calories:</strong> 410</p>
+    <h4>Prep Instructions:</h4>
+    <p><li>Cook turkey mince with olive oil and seasonings.</li>
+      <li>Whisk eggs and mix with turkey, spinach, and tomatoes.</li>
+      <li>Pour into muffin tins and bake at 180°C for 15-20 minutes.</li>
+      <li>Store in airtight containers and reheat as needed.</li>
+</p>
+  </article>
+</div>
+</section>
+
+<section>
+  <h2>Lunch & Dinner Meals (Protein over 30g)</h2>
+
+<button class="accordion">Chicken & Avocado Whole Wheat Wrap</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 42g | Calories: 620 kcal | Weight: ~430g</p>
+    <h4>Ingredients (for 4 wraps):</h4>
+    <ul>
+      <li>600g grilled chicken breast (150g per wrap)</li>
+      <li>4 whole wheat wraps (~60g each)</li>
+      <li>200g avocado, mashed (50g per wrap)</li>
+      <li>200g shredded lettuce</li>
+      <li>100g cherry tomatoes, diced</li>
+      <li>1 tbsp olive oil</li>
+      <li>Salt, pepper, and paprika</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Cook chicken and season.</li>
+      <li>Assemble wraps with chicken, avocado, lettuce, and tomatoes.</li>
+      <li>Wrap tightly and store in airtight containers.</li>
+    </ul>
+  </article>
+</div>
+
+
+<button class="accordion">Turkey & Hummus Bagel Sandwich</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 38g | Calories: 590 kcal | Weight: ~450g</p>
+    <h4>Ingredients (for 4 sandwiches):</h4>
+    <ul>
+      <li>600g sliced turkey breast (150g per sandwich)</li>
+      <li>4 whole wheat bagels (~90g each)</li>
+      <li>200g hummus (50g per sandwich)</li>
+      <li>200g cucumber slices</li>
+      <li>200g mixed greens</li>
+      <li>1 tbsp olive oil</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Slice bagels and spread hummus.</li>
+      <li>Add turkey, cucumber, and greens.</li>
+      <li>Wrap in foil or store in containers.</li>
+    </ul>
+  </article>
+</div>
+
+
+<button class="accordion">Spicy Tofu & Chickpea Pita Pocket</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 36g | Calories: 580 kcal | Weight: ~420g</p>
+    <h4>Ingredients (for 4 pitas):</h4>
+    <ul>
+      <li>600g firm tofu, cubed (150g per pita)</li>
+      <li>400g canned chickpeas, drained</li>
+      <li>4 whole wheat pitas (~60g each)</li>
+      <li>200g shredded carrots</li>
+      <li>200g cherry tomatoes, halved</li>
+      <li>1 tbsp olive oil</li>
+      <li>1 tsp smoked paprika, cumin, and garlic powder</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Sauté tofu and chickpeas with spices.</li>
+      <li>Fill pitas with tofu mixture, carrots, and tomatoes.</li>
+      <li>Store in airtight containers.</li>
+    </ul>
+  </article>
+</div>
+
+<button class="accordion">Salmon & Avocado Wrap</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 40g | Calories: 610 kcal | Weight: ~430g</p>
+    <h4>Ingredients (for 4 wraps):</h4>
+    <ul>
+      <li>600g cooked salmon fillet (150g per wrap)</li>
+      <li>4 whole wheat wraps (~60g each)</li>
+      <li>200g avocado, mashed (50g per wrap)</li>
+      <li>200g cucumber slices</li>
+      <li>200g mixed greens</li>
+      <li>1 tbsp lemon juice</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Flake salmon and mix with lemon juice.</li>
+      <li>Assemble wraps with salmon, avocado, cucumber, and greens.</li>
+      <li>Wrap tightly and store in containers.</li>
+    </ul>
+  </article>
+</div>
+
+<button class="accordion">Beef & Black Bean Pita Pocket</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 44g | Calories: 640 kcal | Weight: ~460g</p>
+    <h4>Ingredients (for 4 pitas):</h4>
+    <ul>
+      <li>600g lean beef mince (150g per pita)</li>
+      <li>400g canned black beans, drained</li>
+      <li>4 whole wheat pitas (~60g each)</li>
+      <li>200g shredded lettuce</li>
+      <li>200g diced tomatoes</li>
+      <li>1 tbsp olive oil</li>
+      <li>1 tsp cumin, paprika, and chilli powder</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Brown beef mince with spices.</li>
+      <li>Mix in black beans.</li>
+      <li>Stuff pitas with beef, lettuce, and tomatoes.</li>
+      <li>Store in airtight containers.</li>
+    </ul>
+  </article>
+</div>
+
+<button class="accordion">Turkey & Spinach Egg Muffins</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 32g | Calories: 410 kcal | Weight: ~350g</p>
+    <h4>Ingredients (for 4 servings):</h4>
+    <ul>
+      <li>8 whole eggs (2 per serving)</li>
+      <li>400g lean turkey mince (100g per serving)</li>
+      <li>200g spinach, chopped</li>
+      <li>100g cherry tomatoes, diced</li>
+      <li>1 tbsp olive oil</li>
+      <li>Salt, pepper, and paprika</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Cook turkey mince with olive oil and seasonings.</li>
+      <li>Whisk eggs and mix with turkey, spinach, and tomatoes.</li>
+      <li>Pour into muffin tins and bake at 180°C for 15–20 minutes.</li>
+      <li>Store in airtight containers and reheat as needed.</li>
+    </ul>
+  </article>
+</div>
+
+<button class="accordion">Smoked Salmon & Avocado Bagel</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 30g | Calories: 580 kcal</p>
+    <h4>Ingredients (for 4 servings):</h4>
+    <ul>
+      <li>600g smoked salmon (150g per serving)</li>
+      <li>4 bagels (90g each)</li>
+      <li>200g mashed avocado (50g per serving)</li>
+      <li>1 tbsp lemon juice</li>
+      <li>1 tsp black pepper</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Slice bagels and spread avocado on each half.</li>
+      <li>Add smoked salmon and a sprinkle of lemon juice and black pepper.</li>
+      <li>Store in airtight containers.</li>
+    </ul>
+  </article>
+</div>
+</section>
+
+<section>
+  <h2>Lunch & Dinner Meals (Protein over 30g)</h2>
+
+<button class="accordion">Chicken & Quinoa Power Bowl</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 45g | Calories: 550 kcal</p>
+    <h4>Ingredients (for 4 servings):</h4>
+    <ul>
+      <li>600g cooked chicken breast (150g per meal)</li>
+      <li>600g cooked quinoa (150g per meal)</li>
+      <li>400g steamed broccoli</li>
+      <li>200g cherry tomatoes, halved</li>
+      <li>1 lemon (for juice)</li>
+      <li>Salt, pepper, and garlic powder to taste</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Cook and season chicken, roast or pan-fry.</li>
+      <li>Cook quinoa and steam broccoli.</li>
+      <li>Divide all ingredients into 4 containers.</li>
+    </ul>
+  </article>
+</div>
+
+<button class="accordion">Turkey & Sweet Potato Meal Prep</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 42g | Calories: 590 kcal</p>
+    <h4>Ingredients (for 4 servings):</h4>
+    <ul>
+      <li>600g lean turkey mince (150g per meal)</li>
+      <li>600g roasted sweet potatoes (150g per meal)</li>
+      <li>400g sautéed kale or spinach</li>
+      <li>10ml olive oil (for cooking) or swap for FryLight!</li>
+      <li>Salt, pepper, paprika, and cumin</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Brown the turkey mince in a pan with spices.</li>
+      <li>Roast sweet potatoes and sauté greens.</li>
+      <li>Split evenly into containers.</li>
+    </ul>
+  </article>
+</div>
+
+<button class="accordion">Spiced Lentil & Chickpea Salad with Chicken</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 38g | Calories: 580 kcal</p>
+    <h4>Ingredients (for 4 servings):</h4>
+    <ul>
+      <li>600g grilled chicken breast (150g per meal)</li>
+      <li>400g cooked lentils</li>
+      <li>400g canned chickpeas, drained</li>
+      <li>200g cucumber, diced</li>
+      <li>200g cherry tomatoes, halved</li>
+      <li>10ml extra virgin olive oil or swap for FryLight!</li>
+      <li>1 tsp cumin, paprika, and salt</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Cook chicken, season with spices.</li>
+      <li>Mix lentils, chickpeas, and veggies.</li>
+      <li>Drizzle with olive oil, divide into 4 containers.</li>
+    </ul>
+  </article>
+</div>
+
+<button class="accordion">Salmon & Brown Rice with Greens</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 44g | Calories: 620 kcal</p>
+    <h4>Ingredients (for 4 servings):</h4>
+    <ul>
+      <li>600g salmon fillet (150g per meal)</li>
+      <li>600g cooked brown rice (150g per meal)</li>
+      <li>400g steamed asparagus or green beans</li>
+      <li>FryLight spray</li>
+      <li>Salt, pepper, and lemon juice</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Bake salmon and season with salt, pepper, and lemon.</li>
+      <li>Cook rice and steam greens.</li>
+      <li>Divide into containers.</li>
+    </ul>
+  </article>
+</div>
+
+
+<button class="accordion">Tofu & Black Bean Stir-Fry with Rice</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 36g | Calories: 570 kcal</p>
+    <h4>Ingredients (for 4 servings):</h4>
+    <ul>
+      <li>600g firm tofu, cubed</li>
+      <li>400g cooked black beans</li>
+      <li>600g cooked jasmine rice (150g per meal)</li>
+      <li>200g bell peppers, sliced</li>
+      <li>200g courgette, sliced</li>
+      <li>5–10ml sesame oil</li>
+      <li>10ml soy sauce</li>
+      <li>1 tsp garlic and ginger</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Stir-fry tofu with garlic, ginger, and soy sauce.</li>
+      <li>Sauté peppers and courgette, mix with beans.</li>
+      <li>Serve with rice, split into 4 containers.</li>
+    </ul>
+  </article>
+</div>
+
+<button class="accordion">Garlic Ginger Chicken with Brown Rice & Greens</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 50g | Calories: 620 kcal</p>
+    <h4>Ingredients (for 4 servings):</h4>
+    <ul>
+      <li>700g grilled chicken breast (175g per meal)</li>
+      <li>600g cooked brown rice (150g per meal)</li>
+      <li>400g steamed green beans or broccoli</li>
+      <li>1 tbsp sesame oil</li>
+      <li>2 tbsp soy sauce</li>
+      <li>1 tsp garlic and ginger</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Cook chicken with garlic, ginger, and soy sauce.</li>
+      <li>Cook rice and steam greens.</li>
+      <li>Divide into 4 containers.</li>
+    </ul>
+  </article>
+</div>
+
+<button class="accordion">Beef & Quinoa Stir-Fry with Vegetables</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 45g | Calories: 640 kcal</p>
+    <h4>Ingredients (for 4 servings):</h4>
+    <ul>
+      <li>600g lean beef mince (150g per meal)</li>
+      <li>600g cooked quinoa (150g per meal)</li>
+      <li>400g mixed bell peppers and courgette</li>
+      <li>1 tbsp olive oil</li>
+      <li>2 tbsp soy sauce</li>
+      <li>1 tsp smoked paprika, salt, and pepper</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Brown beef mince with spices.</li>
+      <li>Stir-fry vegetables in olive oil.</li>
+      <li>Cook quinoa and mix all ingredients together.</li>
+    </ul>
+  </article>
+</div>
+
+<button class="accordion">Baked Salmon with Roasted Sweet Potatoes & Asparagus</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 48g | Calories: 650 kcal</p>
+    <h4>Ingredients (for 4 servings):</h4>
+    <ul>
+      <li>700g salmon fillet (175g per meal)</li>
+      <li>600g roasted sweet potatoes (150g per meal)</li>
+      <li>400g roasted asparagus</li>
+      <li>1 tbsp olive oil</li>
+      <li>1 tsp garlic powder, salt, and lemon juice</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Bake salmon seasoned with garlic, salt, and lemon.</li>
+      <li>Roast sweet potatoes and asparagus.</li>
+      <li>Divide into 4 containers.</li>
+    </ul>
+  </article>
+</div>
+
+<button class="accordion">Turkey & Black Bean Chilli with Rice</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 42g | Calories: 680 kcal</p>
+    <h4>Ingredients (for 4 servings):</h4>
+    <ul>
+      <li>600g lean turkey mince (150g per meal)</li>
+      <li>400g canned black beans, drained</li>
+      <li>600g cooked white rice (150g per meal)</li>
+      <li>400g chopped tomatoes (canned)</li>
+      <li>1 tbsp olive oil</li>
+      <li>1 tsp cumin, paprika, and chilli powder</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Cook turkey mince with spices.</li>
+      <li>Add black beans and chopped tomatoes, simmer.</li>
+      <li>Serve over cooked rice and divide into 4 containers.</li>
+    </ul>
+  </article>
+</div>
+
+<button class="accordion">Tofu & Chickpea Curry with Basmati Rice</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 38g | Calories: 620 kcal</p>
+    <h4>Ingredients (for 4 servings):</h4>
+    <ul>
+      <li>600g firm tofu, cubed</li>
+      <li>400g canned chickpeas, drained</li>
+      <li>600g cooked basmati rice (150g per meal)</li>
+      <li>200g chopped tomatoes (canned)</li>
+      <li>1 tbsp coconut oil</li>
+      <li>1 tsp turmeric, cumin, and garam masala</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Sauté tofu in coconut oil with spices.</li>
+      <li>Add chickpeas and chopped tomatoes, simmer into a curry.</li>
+      <li>Serve over rice and portion into containers.</li>
+    </ul>
+  </article>
+</section>
+</div>
+
+<section>
+  <h2>Lunch & Dinner Meals (Protein over 30g, Wrap/Bagel/pita)</h2>
+
+<button class="accordion">Chicken & Avocado Wrap</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 42g | Calories: 620 kcal</p>
+    <h4>Ingredients (for 4 wraps):</h4>
+    <ul>
+      <li>600g grilled chicken breast (150g per wrap)</li>
+      <li>4 wraps (60g each)</li>
+      <li>200g avocado, mashed (50g per wrap)</li>
+      <li>200g shredded lettuce</li>
+      <li>100g cherry tomatoes, diced</li>
+      <li>1 tbsp olive oil or Frylight!</li>
+      <li>Salt, pepper, and paprika</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Cook chicken and season.</li>
+      <li>Assemble wraps with chicken, avocado, lettuce, and tomatoes.</li>
+      <li>Wrap tightly and store in airtight containers.</li>
+    </ul>
+  </article>
+</div>
+
+
+<button class="accordion">Turkey & Hummus Bagel Sandwich</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 38g | Calories: 590 kcal</p>
+    <h4>Ingredients (for 4 sandwiches):</h4>
+    <ul>
+      <li>600g sliced turkey breast (150g per sandwich)</li>
+      <li>4 whole wheat bagels (90g each)</li>
+      <li>200g hummus (50g per sandwich)</li>
+      <li>200g cucumber slices</li>
+      <li>200g mixed greens</li>
+      <li>1 tbsp olive oil</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Slice bagels and spread hummus.</li>
+      <li>Add turkey, cucumber, and greens.</li>
+      <li>Wrap in foil or store in containers.</li>
+    </ul>
+  </article>
+</div>
+
+
+<button class="accordion">Salmon & Avocado Wrap</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 40g | Calories: 610 kcal</p>
+    <h4>Ingredients (for 4 wraps):</h4>
+    <ul>
+      <li>600g cooked salmon fillet (150g per wrap)</li>
+      <li>4 whole wheat wraps (~60g each)</li>
+      <li>200g avocado, mashed (50g per wrap)</li>
+      <li>200g cucumber slices</li>
+      <li>200g mixed greens</li>
+      <li>1 tbsp lemon juice</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Flake salmon and mix with lemon juice.</li>
+      <li>Assemble wraps with salmon, avocado, cucumber, and greens.</li>
+      <li>Wrap tightly and store in containers.</li>
+    </ul>
+  </article>
+</div>
+
+<button class="accordion">Beef & Black Bean Pita Pocket</button>
+      <div class="panel">
+  <article>
+    <p><strong>Per Serving:</strong> Protein: 44g | Calories: 640 kcal</p>
+    <h4>Ingredients (for 4 pitas):</h4>
+    <ul>
+      <li>600g lean beef mince (150g per pita)</li>
+      <li>400g canned black beans, drained</li>
+      <li>4 whole wheat pitas (~60g each)</li>
+      <li>200g shredded lettuce</li>
+      <li>200g diced tomatoes</li>
+      <li>1 tbsp olive oil</li>
+      <li>1 tsp cumin, paprika, and chilli powder</li>
+    </ul>
+    <h4>Meal Prep:</h4>
+    <ul>
+      <li>Brown beef mince with spices.</li>
+      <li>Mix in black beans.</li>
+      <li>Stuff pitas with beef, lettuce, and tomatoes.</li>
+      <li>Store in airtight containers.</li>
+    </ul>
+  </article>
+</div>
+</section>
+
+
+
+</div>
+
 
   <script>
   // Tabs
