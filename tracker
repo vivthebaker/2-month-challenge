@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Tracker</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; }
+    .tabs { display: flex; }
+    .tab-btn {
+      flex: 1;
+      padding: 1em;
+      text-align: center;
+      background: #eee;
+      cursor: pointer;
+    }
+    .tab-btn.active { background: #ccc; }
+    .tab-content { display: none; padding: 1em; }
+    .tab-content.active { display: block; }
+    input[type="checkbox"] { transform: scale(1.2); margin-right: 8px; }
+
+    .accordion {
+      background-color: #f1f1f1;
+      cursor: pointer;
+      padding: 1em;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+    }
+    .accordion:hover, .accordion.active {
+      background-color: #ddd;
+    }
+    .panel {
+      padding: 0 1em;
+      display: none;
+      overflow: hidden;
+      background-color: #fafafa;
+      border-left: 2px solid #eee;
+      border-right: 2px solid #eee;
+      border-bottom: 2px solid #eee;
+    }
+    .panel.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <div class="tab-btn active" data-tab="tracker">Meal & Activity Tracker</div>
+    <div class="tab-btn" data-tab="grocery">Weekly Grocery List</div>
+    <div class="tab-btn" data-tab="mealprep">Sunday Meal Prep</div>
+  </div>
+
+  <div class="tab-content active" id="tracker">
+  <h1>Meal & Activity Tracker</h1>
+
+  <button class="accordion">Week 1: March 24 - March 30</button>
+  <div class="panel">
+    <h3>Monday, March 24</h3>
+    <label><input type="checkbox" id="w1-mon-b"> Breakfast: Peanut Butter & Banana Overnight Oats (26g protein)</label><br>
+    <label><input type="checkbox" id="w1-mon-l"> Lunch: Chicken & Avocado Whole Wheat Wrap (42g protein)</label><br>
+    <label><input type="checkbox" id="w1-mon-d"> Dinner: Turkey & Sweet Potato Meal Prep (42g protein)</label><br>
+    <label><input type="checkbox" id="w1-mon-x"> Exercise: 30-minute mobility routine</label><br>
+    <h3>Tuesday, March 25</h3>
+    <label><input type="checkbox" id="w1-tue-b"> Breakfast: Turkey & Spinach Egg Muffins (32g protein)</label><br>
+    <label><input type="checkbox" id="w1-tue-l"> Lunch: Chicken & Avocado Whole Wheat Wrap (42g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-tue-d"> Dinner: Turkey & Sweet Potato Meal Prep (42g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-tue-x"> Exercise: 5K run</label><br>
+    <h3>Wednesday, March 26</h3>
+    <label><input type="checkbox" id="w1-wed-b"> Breakfast: Peanut Butter & Banana Overnight Oats (26g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-wed-l"> Lunch: Turkey & Hummus Bagel Sandwich (38g protein)</label><br>
+    <label><input type="checkbox" id="w1-wed-d"> Dinner: Chicken & Quinoa Power Bowl (45g protein)</label><br>
+    <label><input type="checkbox" id="w1-wed-x"> Exercise: 30-minute mobility routine</label><br>
+    <h3>Thursday, March 27</h3>
+    <label><input type="checkbox" id="w1-thu-b"> Breakfast: Turkey & Spinach Egg Muffins (32g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-thu-l"> Lunch: Turkey & Hummus Bagel Sandwich (38g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-thu-d"> Dinner: Chicken & Quinoa Power Bowl (45g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-thu-x"> Exercise: 5K run</label><br>
+    <h3>Friday, March 28</h3>
+    <label><input type="checkbox" id="w1-fri-b"> Breakfast: Chia Pudding with Protein Powder & Berries (28g protein)</label><br>
+    <label><input type="checkbox" id="w1-fri-l"> Lunch: Salmon & Avocado Wrap (40g protein)</label><br>
+    <label><input type="checkbox" id="w1-fri-d"> Dinner: Baked Salmon with Roasted Sweet Potatoes & Asparagus (48g protein)</label><br>
+    <label><input type="checkbox" id="w1-fri-x"> Exercise: 30-minute mobility routine</label><br>
+    <h3>Saturday, March 29</h3>
+    <label><input type="checkbox" id="w1-sat-b"> Breakfast: Chia Pudding with Protein Powder & Berries (28g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-sat-l"> Lunch: Salmon & Avocado Wrap (40g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-sat-d"> Dinner: Baked Salmon with Roasted Sweet Potatoes & Asparagus (48g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-sat-x"> Exercise: 5K run</label><br>
+    <h3>Sunday, March 30</h3>
+    <label><input type="checkbox" id="w1-sun-b"> Breakfast: Almond Butter & Banana Protein Smoothie (28g protein)</label><br>
+    <label><input type="checkbox" id="w1-sun-l"> Lunch: Beef & Black Bean Pitta Pocket (44g protein)</label><br>
+    <label><input type="checkbox" id="w1-sun-d"> Dinner: Beef & Quinoa Stir-Fry with Vegetables (45g protein)</label><br>
+    <label><input type="checkbox" id="w1-sun-x"> Exercise: Rest day</label><br>
+  </div>
+
+  <button class="accordion">Week 2: March 31 - April 6</button>
+  <div class="panel">
+    <h3>Monday, March 31</h3>
+    <label><input type="checkbox" id="w2-mon-b"> Breakfast: Almond Butter & Banana Protein Smoothie (28g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-mon-l"> Lunch: Beef & Black Bean Pitta Pocket (44g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-mon-d"> Dinner: Beef & Quinoa Stir-Fry with Vegetables (45g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-mon-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Tuesday, April 1</h3>
+    <label><input type="checkbox" id="w2-tue-b"> Breakfast: Coconut Yogurt with Protein & Granola (27g protein)</label><br>
+    <label><input type="checkbox" id="w2-tue-l"> Lunch: Spicy Tofu & Chickpea Pitta Pocket (36g protein)</label><br>
+    <label><input type="checkbox" id="w2-tue-d"> Dinner: Tofu & Chickpea Curry with Basmati Rice (38g protein)</label><br>
+    <label><input type="checkbox" id="w2-tue-x"> Exercise: 5K run</label><br>
+
+    <h3>Wednesday, April 2</h3>
+    <label><input type="checkbox" id="w2-wed-b"> Breakfast: Coconut Yogurt with Protein & Granola (27g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-wed-l"> Lunch: Spicy Tofu & Chickpea Pitta Pocket (36g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-wed-d"> Dinner: Tofu & Chickpea Curry with Basmati Rice (38g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-wed-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Thursday, April 3</h3>
+    <label><input type="checkbox" id="w2-thu-b"> Breakfast: Chocolate Protein Pudding (26g protein)</label><br>
+    <label><input type="checkbox" id="w2-thu-l"> Lunch: Turkey & Black Bean Chilli with Rice (42g protein)</label><br>
+    <label><input type="checkbox" id="w2-thu-d"> Dinner: Garlic Ginger Chicken with Brown Rice & Greens (50g protein)</label><br>
+    <label><input type="checkbox" id="w2-thu-x"> Exercise: 5K run</label><br>
+
+    <h3>Friday, April 4</h3>
+    <label><input type="checkbox" id="w2-fri-b"> Breakfast: Chocolate Protein Pudding (26g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-fri-l"> Lunch: Turkey & Black Bean Chilli with Rice (42g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-fri-d"> Dinner: Garlic Ginger Chicken with Brown Rice & Greens (50g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-fri-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Saturday, April 5</h3>
+    <label><input type="checkbox" id="w2-sat-b"> Breakfast: Smoked Salmon & Avocado Bagel (30g protein)</label><br>
+    <label><input type="checkbox" id="w2-sat-l"> Lunch: Salmon & Brown Rice with Greens (44g protein)</label><br>
+    <label><input type="checkbox" id="w2-sat-d"> Dinner: Spiced Lentil & Chickpea Salad with Chicken (38g protein)</label><br>
+    <label><input type="checkbox" id="w2-sat-x"> Exercise: 5K run</label><br>
+
+    <h3>Sunday, April 6</h3>
+    <label><input type="checkbox" id="w2-sun-b"> Breakfast: Smoked Salmon & Avocado Bagel (30g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-sun-l"> Lunch: Salmon & Brown Rice with Greens (44g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-sun-d"> Dinner: Spiced Lentil & Chickpea Salad with Chicken (38g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-sun-x"> Exercise: Rest day</label><br>
+  </div>
+
+  
+    </div>
+  
+
+  <div class="tab-content" id="grocery">
+    <h1>Weekly Grocery List</h1>
+    
+    <!-- Week accordions go here -->
+    <div>
+      <button class="accordion">Week 1 (March 24 - March 30)</button>
+      <div class="panel">
+        <h3>Proteins</h3>
+        <label><input type="checkbox" id="w1-p-1"> Chicken breast (600g)</label><br>
+        <label><input type="checkbox" id="w1-p-2"> Turkey mince (300g)</label><br>
+        <label><input type="checkbox" id="w1-p-3"> Turkey breast (for egg muffins)</label><br>
+        <label><input type="checkbox" id="w1-p-4"> Salmon fillets (600g)</label><br>
+        <label><input type="checkbox" id="w1-p-5"> Lean beef mince (300g)</label><br>
+        <label><input type="checkbox" id="w1-p-6"> Eggs (1 dozen)</label><br>
+
+        <h3>Dairy & Alternatives</h3>
+        <label><input type="checkbox" id="w1-d-1"> Unsweetened almond milk (1L)</label><br>
+        <label><input type="checkbox" id="w1-d-2"> Protein powder (vanilla)</label><br>
+        <label><input type="checkbox" id="w1-d-3"> Chia seeds (100g)</label><br>
+        <label><input type="checkbox" id="w1-d-4"> Coconut yogurt (optional, for weekend)</label><br>
+
+        <h3>Grains & Legumes</h3>
+        <label><input type="checkbox" id="w1-g-1"> Rolled oats (250g)</label><br>
+        <label><input type="checkbox" id="w1-g-2"> Quinoa (250g)</label><br>
+        <label><input type="checkbox" id="w1-g-3"> Brown rice (250g)</label><br>
+        <label><input type="checkbox" id="w1-g-4"> Black beans (1 can)</label><br>
+        <label><input type="checkbox" id="w1-g-5"> Whole wheat wraps (4-6)</label><br>
+        <label><input type="checkbox" id="w1-g-6"> Whole wheat bagels (2)</label><br>
+        <label><input type="checkbox" id="w1-g-7"> Whole wheat pittas (2)</label><br>
+
+        <h3>Fruits & Vegetables</h3>
+        <label><input type="checkbox" id="w1-f-1"> Bananas (4)</label><br>
+        <label><input type="checkbox" id="w1-f-2"> Mixed berries (200g)</label><br>
+        <label><input type="checkbox" id="w1-f-3"> Spinach (200g - for egg muffins)</label><br>
+        <label><input type="checkbox" id="w1-f-4"> Mixed greens/lettuce (1 bag)</label><br>
+        <label><input type="checkbox" id="w1-f-5"> Cherry tomatoes (1 punnet)</label><br>
+        <label><input type="checkbox" id="w1-f-6"> Cucumber (1)</label><br>
+        <label><input type="checkbox" id="w1-f-7"> Avocados (3)</label><br>
+        <label><input type="checkbox" id="w1-f-8"> Sweet potatoes (400g)</label><br>
+        <label><input type="checkbox" id="w1-f-9"> Broccoli or green beans (300g)</label><br>
+
+        <h3>Nuts, Seeds & Butters</h3>
+        <label><input type="checkbox" id="w1-n-1"> Peanut butter (1 jar)</label><br>
+        <label><input type="checkbox" id="w1-n-2"> Almond butter (1 jar)</label><br>
+        <label><input type="checkbox" id="w1-n-3"> Hummus (150g)</label><br>
+
+        <h3>Condiments & Seasonings</h3>
+        <label><input type="checkbox" id="w1-c-1"> Olive oil</label><br>
+        <label><input type="checkbox" id="w1-c-2"> Salt, pepper</label><br>
+        <label><input type="checkbox" id="w1-c-3"> Paprika, cumin</label><br>
+        <label><input type="checkbox" id="w1-c-4"> Lemon (1)</label><br>
+      </div>
+
+       <button class="accordion">Week 2 (March 31 - April 6)</button>
+      <div class="panel">
+        <h3>Proteins</h3>
+        <label><input type="checkbox" id="w2-p-1"> Chicken breast (300g)</label><br>
+        <label><input type="checkbox" id="w2-p-2"> Turkey mince (300g)</label><br>
+        <label><input type="checkbox" id="w2-p-3"> Salmon fillets (600g)</label><br>
+        <label><input type="checkbox" id="w2-p-4"> Lean beef mince (300g)</label><br>
+        <label><input type="checkbox" id="w2-p-5"> Firm tofu (1 block, ~400g)</label><br>
+        <label><input type="checkbox" id="w2-p-6"> Eggs (optional, if needed)</label><br>
+        <label><input type="checkbox" id="w2-p-7"> Smoked salmon (200g)</label><br>
+
+        <h3>Dairy & Alternatives</h3>
+        <label><input type="checkbox" id="w2-d-1"> Unsweetened almond milk (1L)</label><br>
+        <label><input type="checkbox" id="w2-d-2"> Coconut yogurt (300g)</label><br>
+        <label><input type="checkbox" id="w2-d-3"> Protein powder (chocolate)</label><br>
+        <label><input type="checkbox" id="w2-d-4"> Chia seeds (if needed)</label><br>
+
+        <h3>Grains & Legumes</h3>
+        <label><input type="checkbox" id="w2-g-1"> Brown rice (500g)</label><br>
+        <label><input type="checkbox" id="w2-g-2"> Basmati rice (250g)</label><br>
+        <label><input type="checkbox" id="w2-g-3"> Quinoa (250g)</label><br>
+        <label><input type="checkbox" id="w2-g-4"> Black beans (1 can)</label><br>
+        <label><input type="checkbox" id="w2-g-5"> Chickpeas (2 cans)</label><br>
+        <label><input type="checkbox" id="w2-g-6"> Whole wheat bagels (2)</label><br>
+
+        <h3>Fruits & Vegetables</h3>
+        <label><input type="checkbox" id="w2-f-1"> Mixed berries (100g)</label><br>
+        <label><input type="checkbox" id="w2-f-2"> Sweet potatoes (300g)</label><br>
+        <label><input type="checkbox" id="w2-f-3"> Mixed greens/lettuce (1 bag)</label><br>
+        <label><input type="checkbox" id="w2-f-4"> Cherry tomatoes (1 punnet)</label><br>
+        <label><input type="checkbox" id="w2-f-5"> Cucumber (1)</label><br>
+        <label><input type="checkbox" id="w2-f-6"> Bell peppers (2)</label><br>
+        <label><input type="checkbox" id="w2-f-7"> Broccoli or green beans (300g)</label><br>
+        <label><input type="checkbox" id="w2-f-8"> Carrots (2)</label><br>
+        <label><input type="checkbox" id="w2-f-9"> Courgette/zucchini (1)</label><br>
+
+        <h3>Nuts, Seeds & Granola</h3>
+        <label><input type="checkbox" id="w2-n-1"> Granola or chopped almonds (100g)</label><br>
+
+        <h3>Condiments & Seasonings</h3>
+        <label><input type="checkbox" id="w2-c-1"> Soy sauce</label><br>
+        <label><input type="checkbox" id="w2-c-2"> Garlic and ginger</label><br>
+        <label><input type="checkbox" id="w2-c-3"> Curry spices (turmeric, garam masala)</label><br>
+        <label><input type="checkbox" id="w2-c-4"> Maple syrup (if needed)</label><br>
+
+        <h3>Canned Goods</h3>
+        <label><input type="checkbox" id="w2-cg-1"> Chopped/diced tomatoes (1 can)</label><br>
+      </div>
+       <button class="accordion">Week 3 (April 7 - April 13)</button>
+<div class="panel">
+</div>
+       <button class="accordion">Week 4 (April 14 - April 20)</button>
+      <div class="panel">
+        <h3>Proteins</h3>
+        <label><input type="checkbox" id="w4-p-1"> Chicken breast (600g)</label><br>
+        <label><input type="checkbox" id="w4-p-2"> Turkey mince (300g)</label><br>
+        <label><input type="checkbox" id="w4-p-3"> Turkey breast (300g)</label><br>
+        <label><input type="checkbox" id="w4-p-4"> Salmon fillets (600g)</label><br>
+        <label><input type="checkbox" id="w4-p-5"> Lean beef mince (300g)</label><br>
+        <label><input type="checkbox" id="w4-p-6"> Firm tofu (1 block, ~400g)</label><br>
+        <label><input type="checkbox" id="w4-p-7"> Eggs (1 dozen)</label><br>
+        <label><input type="checkbox" id="w4-p-8"> Smoked salmon (200g)</label><br>
+
+        <h3>Dairy & Alternatives</h3>
+        <label><input type="checkbox" id="w4-d-1"> Unsweetened almond milk (1L)</label><br>
+        <label><input type="checkbox" id="w4-d-2"> Coconut yogurt (300g)</label><br>
+        <label><input type="checkbox" id="w4-d-3"> Protein powder (both vanilla and chocolate)</label><br>
+
+        <h3>Grains & Legumes</h3>
+        <label><input type="checkbox" id="w4-g-1"> Rolled oats (check supply)</label><br>
+        <label><input type="checkbox" id="w4-g-2"> Quinoa (250g)</label><br>
+        <label><input type="checkbox" id="w4-g-3"> Brown rice (500g)</label><br>
+        <label><input type="checkbox" id="w4-g-4"> Basmati rice (250g)</label><br>
+        <label><input type="checkbox" id="w4-g-5"> Black beans (2 cans)</label><br>
+        <label><input type="checkbox" id="w4-g-6"> Chickpeas (1 can)</label><br>
+        <label><input type="checkbox" id="w4-g-7"> Whole wheat wraps (4-6)</label><br>
+        <label><input type="checkbox" id="w4-g-8"> Whole wheat bagels (2)</label><br>
+        <label><input type="checkbox" id="w4-g-9"> Whole wheat pittas (2)</label><br>
+
+        <h3>Fruits & Vegetables</h3>
+        <label><input type="checkbox" id="w4-f-1"> Bananas (4)</label><br>
+        <label><input type="checkbox" id="w4-f-2"> Mixed berries (200g)</label><br>
+        <label><input type="checkbox" id="w4-f-3"> Spinach (200g)</label><br>
+        <label><input type="checkbox" id="w4-f-4"> Mixed greens/lettuce (1 bag)</label><br>
+        <label><input type="checkbox" id="w4-f-5"> Cherry tomatoes (1 punnet)</label><br>
+        <label><input type="checkbox" id="w4-f-6"> Cucumber (1)</label><br>
+        <label><input type="checkbox" id="w4-f-7"> Avocados (3)</label><br>
+        <label><input type="checkbox" id="w4-f-8"> Sweet potatoes (400g)</label><br>
+        <label><input type="checkbox" id="w4-f-9"> Broccoli or green beans (300g)</label><br>
+        <label><input type="checkbox" id="w4-f-10"> Bell peppers (2)</label><br>
+
+        <h3>Nuts, Seeds & Butters</h3>
+        <label><input type="checkbox" id="w4-n-1"> Peanut butter (check supply)</label><br>
+        <label><input type="checkbox" id="w4-n-2"> Almond butter (check supply)</label><br>
+        <label><input type="checkbox" id="w4-n-3"> Chia seeds (check supply)</label><br>
+        <label><input type="checkbox" id="w4-n-4"> Hummus (150g)</label><br>
+
+        <h3>Condiments & Seasonings</h3>
+        <label><input type="checkbox" id="w4-c-1"> Spices (check supply)</label><br>
+        <label><input type="checkbox" id="w4-c-2"> Lemon (1)</label><br>
+      </div>
+       <button class="accordion">Week 5 (April 21 - April 27)</button>
+      <div class="panel">
+        <h3>Proteins</h3>
+        <label><input type="checkbox" id="w5-p-1"> Chicken breast (600g)</label><br>
+        <label><input type="checkbox" id="w5-p-2"> Turkey mince (300g)</label><br>
+        <label><input type="checkbox" id="w5-p-3"> Turkey breast (for egg muffins)</label><br>
+        <label><input type="checkbox" id="w5-p-4"> Salmon fillets (600g)</label><br>
+        <label><input type="checkbox" id="w5-p-5"> Lean beef mince (300g)</label><br>
+        <label><input type="checkbox" id="w5-p-6"> Eggs (1 dozen)</label><br>
+
+        <h3>Dairy & Alternatives</h3>
+        <label><input type="checkbox" id="w5-d-1"> Unsweetened almond milk (1L)</label><br>
+        <label><input type="checkbox" id="w5-d-2"> Protein powder (vanilla)</label><br>
+        <label><input type="checkbox" id="w5-d-3"> Chia seeds (100g)</label><br>
+        <label><input type="checkbox" id="w5-d-4"> Coconut yogurt (optional, for weekend)</label><br>
+
+        <h3>Grains & Legumes</h3>
+        <label><input type="checkbox" id="w5-g-1"> Rolled oats (250g)</label><br>
+        <label><input type="checkbox" id="w5-g-2"> Quinoa (250g)</label><br>
+        <label><input type="checkbox" id="w5-g-3"> Brown rice (250g)</label><br>
+        <label><input type="checkbox" id="w5-g-4"> Black beans (1 can)</label><br>
+        <label><input type="checkbox" id="w5-g-5"> Whole wheat wraps (4-6)</label><br>
+        <label><input type="checkbox" id="w5-g-6"> Whole wheat bagels (2)</label><br>
+        <label><input type="checkbox" id="w5-g-7"> Whole wheat pittas (2)</label><br>
+
+        <h3>Fruits & Vegetables</h3>
+        <label><input type="checkbox" id="w5-f-1"> Bananas (4)</label><br>
+        <label><input type="checkbox" id="w5-f-2"> Mixed berries (200g)</label><br>
+        <label><input type="checkbox" id="w5-f-3"> Spinach (200g - for egg muffins)</label><br>
+        <label><input type="checkbox" id="w5-f-4"> Mixed greens/lettuce (1 bag)</label><br>
+        <label><input type="checkbox" id="w5-f-5"> Cherry tomatoes (1 punnet)</label><br>
+        <label><input type="checkbox" id="w5-f-6"> Cucumber (1)</label><br>
+        <label><input type="checkbox" id="w5-f-7"> Avocados (3)</label><br>
+        <label><input type="checkbox" id="w5-f-8"> Sweet potatoes (400g)</label><br>
+        <label><input type="checkbox" id="w5-f-9"> Broccoli or green beans (300g)</label><br>
+
+        <h3>Nuts, Seeds & Butters</h3>
+        <label><input type="checkbox" id="w5-n-1"> Peanut butter (1 jar)</label><br>
+        <label><input type="checkbox" id="w5-n-2"> Almond butter (1 jar)</label><br>
+        <label><input type="checkbox" id="w5-n-3"> Hummus (150g)</label><br>
+
+        <h3>Condiments & Seasonings</h3>
+        <label><input type="checkbox" id="w5-c-1"> Olive oil</label><br>
+        <label><input type="checkbox" id="w5-c-2"> Salt, pepper</label><br>
+        <label><input type="checkbox" id="w5-c-3"> Paprika, cumin</label><br>
+        <label><input type="checkbox" id="w5-c-4"> Lemon (1)</label><br>
+      </div>
+       <button class="accordion">Week 6 (April 28 - May 4)</button>
+<div class="panel">
+  <h3>Proteins</h3>
+  <label><input type="checkbox" id="w6-p-1"> Chicken breast (300g)</label><br>
+  <label><input type="checkbox" id="w6-p-2"> Turkey mince (300g)</label><br>
+  <label><input type="checkbox" id="w6-p-3"> Salmon fillets (600g)</label><br>
+  <label><input type="checkbox" id="w6-p-4"> Lean beef mince (300g)</label><br>
+  <label><input type="checkbox" id="w6-p-5"> Firm tofu (1 block, ~400g)</label><br>
+  <label><input type="checkbox" id="w6-p-6"> Eggs (optional, if needed)</label><br>
+  <label><input type="checkbox" id="w6-p-7"> Smoked salmon (200g)</label><br>
+
+  <h3>Dairy & Alternatives</h3>
+  <label><input type="checkbox" id="w6-d-1"> Unsweetened almond milk (1L)</label><br>
+  <label><input type="checkbox" id="w6-d-2"> Coconut yogurt (300g)</label><br>
+  <label><input type="checkbox" id="w6-d-3"> Protein powder (chocolate)</label><br>
+  <label><input type="checkbox" id="w6-d-4"> Chia seeds (if needed)</label><br>
+
+  <h3>Grains & Legumes</h3>
+  <label><input type="checkbox" id="w6-g-1"> Brown rice (500g)</label><br>
+  <label><input type="checkbox" id="w6-g-2"> Basmati rice (250g)</label><br>
+  <label><input type="checkbox" id="w6-g-3"> Quinoa (250g)</label><br>
+  <label><input type="checkbox" id="w6-g-4"> Black beans (1 can)</label><br>
+  <label><input type="checkbox" id="w6-g-5"> Chickpeas (2 cans)</label><br>
+  <label><input type="checkbox" id="w6-g-6"> Whole wheat bagels (2)</label><br>
+
+  <h3>Fruits & Vegetables</h3>
+  <label><input type="checkbox" id="w6-f-1"> Mixed berries (100g)</label><br>
+  <label><input type="checkbox" id="w6-f-2"> Sweet potatoes (300g)</label><br>
+  <label><input type="checkbox" id="w6-f-3"> Mixed greens/lettuce (1 bag)</label><br>
+  <label><input type="checkbox" id="w6-f-4"> Cherry tomatoes (1 punnet)</label><br>
+  <label><input type="checkbox" id="w6-f-5"> Cucumber (1)</label><br>
+  <label><input type="checkbox" id="w6-f-6"> Bell peppers (2)</label><br>
+  <label><input type="checkbox" id="w6-f-7"> Broccoli or green beans (300g)</label><br>
+  <label><input type="checkbox" id="w6-f-8"> Carrots (2)</label><br>
+  <label><input type="checkbox" id="w6-f-9"> Courgette/zucchini (1)</label><br>
+
+  <h3>Nuts, Seeds & Granola</h3>
+  <label><input type="checkbox" id="w6-n-1"> Granola or chopped almonds (100g)</label><br>
+
+  <h3>Condiments & Seasonings</h3>
+  <label><input type="checkbox" id="w6-c-1"> Soy sauce</label><br>
+  <label><input type="checkbox" id="w6-c-2"> Garlic and ginger</label><br>
+  <label><input type="checkbox" id="w6-c-3"> Curry spices (turmeric, garam masala)</label><br>
+  <label><input type="checkbox" id="w6-c-4"> Maple syrup (if needed)</label><br>
+
+  <h3>Canned Goods</h3>
+  <label><input type="checkbox" id="w6-cg-1"> Chopped/diced tomatoes (1 can)</label><br>
+</div>
+       <button class="accordion">Week 7 (May 5 - May 11)</button>
+<div class="panel">
+  <h3>Proteins</h3>
+  <label><input type="checkbox" id="w7-p-1"> Chicken breast (600g)</label><br>
+  <label><input type="checkbox" id="w7-p-2"> Turkey mince (300g)</label><br>
+  <label><input type="checkbox" id="w7-p-3"> Turkey breast (300g)</label><br>
+  <label><input type="checkbox" id="w7-p-4"> Salmon fillets (600g)</label><br>
+  <label><input type="checkbox" id="w7-p-5"> Lean beef mince (300g)</label><br>
+  <label><input type="checkbox" id="w7-p-6"> Eggs (1 dozen)</label><br>
+
+  <h3>Dairy & Alternatives</h3>
+  <label><input type="checkbox" id="w7-d-1"> Unsweetened almond milk (1L)</label><br>
+  <label><input type="checkbox" id="w7-d-2"> Protein powder (vanilla)</label><br>
+  <label><input type="checkbox" id="w7-d-3"> Chia seeds (100g)</label><br>
+
+  <h3>Grains & Legumes</h3>
+  <label><input type="checkbox" id="w7-g-1"> Rolled oats (250g)</label><br>
+  <label><input type="checkbox" id="w7-g-2"> Quinoa (500g)</label><br>
+  <label><input type="checkbox" id="w7-g-3"> Brown rice (250g)</label><br>
+  <label><input type="checkbox" id="w7-g-4"> Black beans (1 can)</label><br>
+  <label><input type="checkbox" id="w7-g-5"> Whole wheat wraps (4-6)</label><br>
+  <label><input type="checkbox" id="w7-g-6"> Whole wheat bagels (2)</label><br>
+  <label><input type="checkbox" id="w7-g-7"> Whole wheat pittas (2)</label><br>
+
+  <h3>Fruits & Vegetables</h3>
+  <label><input type="checkbox" id="w7-f-1"> Bananas (4)</label><br>
+  <label><input type="checkbox" id="w7-f-2"> Mixed berries (200g)</label><br>
+  <label><input type="checkbox" id="w7-f-3"> Spinach (200g - for egg muffins)</label><br>
+  <label><input type="checkbox" id="w7-f-4"> Mixed greens/lettuce (1 bag)</label><br>
+  <label><input type="checkbox" id="w7-f-5"> Cherry tomatoes (1 punnet)</label><br>
+  <label><input type="checkbox" id="w7-f-6"> Cucumber (1)</label><br>
+  <label><input type="checkbox" id="w7-f-7"> Avocados (3)</label><br>
+  <label><input type="checkbox" id="w7-f-8"> Sweet potatoes (400g)</label><br>
+  <label><input type="checkbox" id="w7-f-9"> Broccoli or green beans (300g)</label><br>
+
+  <h3>Nuts, Seeds & Butters</h3>
+  <label><input type="checkbox" id="w7-n-1"> Peanut butter (check supply)</label><br>
+  <label><input type="checkbox" id="w7-n-2"> Almond butter (check supply)</label><br>
+  <label><input type="checkbox" id="w7-n-3"> Hummus (150g)</label><br>
+
+  <h3>Condiments & Seasonings</h3>
+  <label><input type="checkbox" id="w7-c-1"> Olive oil (check supply)</label><br>
+  <label><input type="checkbox" id="w7-c-2"> Spices (check supply)</label><br>
+  <label><input type="checkbox" id="w7-c-3"> Lemon (1)</label><br>
+</div>
+       <button class="accordion">Week 8 (May 12 - 18)</button>
+<div class="panel">
+  <h3>Proteins</h3>
+  <label><input type="checkbox" id="w8-p-1"> Chicken breast (600g)</label><br>
+  <label><input type="checkbox" id="w8-p-2"> Turkey mince (300g)</label><br>
+  <label><input type="checkbox" id="w8-p-3"> Turkey breast (300g)</label><br>
+  <label><input type="checkbox" id="w8-p-4"> Salmon fillets (600g)</label><br>
+  <label><input type="checkbox" id="w8-p-5"> Lean beef mince (300g)</label><br>
+  <label><input type="checkbox" id="w8-p-6"> Firm tofu (1 block, ~400g)</label><br>
+  <label><input type="checkbox" id="w8-p-7"> Eggs (1 dozen)</label><br>
+  <label><input type="checkbox" id="w8-p-8"> Smoked salmon (200g)</label><br>
+
+  <h3>Dairy & Alternatives</h3>
+  <label><input type="checkbox" id="w8-d-1"> Unsweetened almond milk (1L)</label><br>
+  <label><input type="checkbox" id="w8-d-2"> Coconut yogurt (300g)</label><br>
+  <label><input type="checkbox" id="w8-d-3"> Protein powder (both vanilla and chocolate)</label><br>
+
+  <h3>Grains & Legumes</h3>
+  <label><input type="checkbox" id="w8-g-1"> Rolled oats (check supply)</label><br>
+  <label><input type="checkbox" id="w8-g-2"> Quinoa (250g)</label><br>
+  <label><input type="checkbox" id="w8-g-3"> Brown rice (500g)</label><br>
+  <label><input type="checkbox" id="w8-g-4"> Basmati rice (250g)</label><br>
+  <label><input type="checkbox" id="w8-g-5"> Black beans (2 cans)</label><br>
+  <label><input type="checkbox" id="w8-g-6"> Chickpeas (1 can)</label><br>
+  <label><input type="checkbox" id="w8-g-7"> Whole wheat wraps (4-6)</label><br>
+  <label><input type="checkbox" id="w8-g-8"> Whole wheat bagels (2)</label><br>
+  <label><input type="checkbox" id="w8-g-9"> Whole wheat pittas (2)</label><br>
+
+  <h3>Fruits & Vegetables</h3>
+  <label><input type="checkbox" id="w8-f-1"> Bananas (4)</label><br>
+  <label><input type="checkbox" id="w8-f-2"> Mixed berries (200g)</label><br>
+  <label><input type="checkbox" id="w8-f-3"> Spinach (200g)</label><br>
+  <label><input type="checkbox" id="w8-f-4"> Mixed greens/lettuce (1 bag)</label><br>
+  <label><input type="checkbox" id="w8-f-5"> Cherry tomatoes (1 punnet)</label><br>
+  <label><input type="checkbox" id="w8-f-6"> Cucumber (1)</label><br>
+  <label><input type="checkbox" id="w8-f-7"> Avocados (3)</label><br>
+  <label><input type="checkbox" id="w8-f-8"> Sweet potatoes (400g)</label><br>
+  <label><input type="checkbox" id="w8-f-9"> Broccoli or green beans (300g)</label><br>
+  <label><input type="checkbox" id="w8-f-10"> Bell peppers (2)</label><br>
+
+  <h3>Nuts, Seeds & Butters</h3>
+  <label><input type="checkbox" id="w8-n-1"> Peanut butter (check supply)</label><br>
+  <label><input type="checkbox" id="w8-n-2"> Almond butter (check supply)</label><br>
+  <label><input type="checkbox" id="w8-n-3"> Chia seeds (check supply)</label><br>
+  <label><input type="checkbox" id="w8-n-4"> Hummus (150g)</label><br>
+
+  <h3>Condiments & Seasonings</h3>
+  <label><input type="checkbox" id="w8-c-1"> Spices (check supply)</label><br>
+  <label><input type="checkbox" id="w8-c-2"> Lemon (1)</label><br>
+</div>      
+    </div>
+    
+
+  </div>
+
+<div class="tab-content" id="mealprep">
+    <h1>Sunday Meal Prep</h1>
+    <p>This guide will help you efficiently prepare multiple meals for the coming week on Sundays. With recipe repetition, you'll reduce food waste while still maintaining adequate variety.</p>
+    <h2>General Approach</h2>
+    <ul>
+      <li>Prep in batches by meal group: Cook proteins and prep meals in related groups that will be eaten on consecutive days</li>
+      <li>Use multiple cooking methods simultaneously: Oven, stovetop, and countertop prep</li>
+      <li>Store strategically: Use clear containers labeled with contents and prep date</li>
+      <li>Focus on staples: Prep ingredients that form the base of multiple meals</li>
+    </ul>
+    <h2>Weekly Prep Schedule (Organized for Recipe Repetition)</h2>
+    <h3>Step 1: Plan & Organize (15 minutes)</h3>
+    <ul>
+      <li>Review your meal plan for the week, focusing on the meal repetition pattern</li>
+      <li>Gather all containers and storage supplies</li>
+      <li>Set out ingredients for prep</li>
+      <li>Preheat oven to 190°C (375°F)</li>
+      <li>Start cooking any grains (rice, quinoa) that take longest</li>
+    </ul>
+    <h3>Step 2: Protein Prep by Meal Group (45 minutes)</h3>
+    <ul>
+      <li>Batch cook proteins for each 2-day meal group</li>
+      <li>Season and bake first group of proteins (25-30 min)</li>
+      <li>While first batch cooks, prepare marinades/seasonings for second group</li>
+      <li>Cook second group of proteins while prepping vegetable components</li>
+      <li>Repeat for the third protein group</li>
+    </ul>
+    <h3>Step 3: Vegetables & Sides (30 minutes)</h3>
+    <ul>
+      <li>Roast sweet potatoes and other root vegetables in the oven (can cook alongside proteins)</li>
+      <li>Steam greens like broccoli, green beans, or asparagus</li>
+      <li>Chop raw vegetables for wraps and salads (bell peppers, cucumber, etc.)</li>
+      <li>Organize vegetables by meal group to maintain freshness</li>
+    </ul>
+    <h3>Step 4: Prepare Specific Meals (45 minutes)</h3>
+    <ul>
+      <li>Prepare breakfast components by 2-day groupings</li>
+      <li>Make two days of overnight oats in jars</li>
+      <li>Mix two days of chia puddings</li>
+      <li>Prepare two days of egg muffins</li>
+      <li>Prepare and portion proteins for wraps and salads (2-day amounts)</li>
+      <li>Make sauces/dressings and store separately</li>
+    </ul>
+    <h3>Step 5: Package & Store (15 minutes)</h3>
+    <ul>
+      <li>Divide cooked foods into portion-sized containers by meal group</li>
+      <li>Label each container with contents, date, and which day it's intended for</li>
+      <li>Arrange in refrigerator with earliest-use items at front</li>
+    </ul>
+    <h2>Specific Weekly Prep Instructions</h2>
+    <p>Weeks 1–4 and beyond should follow this same structure, adjusted for the rotating protein and grain combinations. Refer to your grocery list for exact quantities.</p>
+    <h2>Time-Saving Tips</h2>
+    <ul>
+      <li>Use the oven efficiently: roast proteins & vegetables together</li>
+      <li>Minimize chopping: use food processor or pre-cut veggies</li>
+      <li>Overlap methods: prep stovetop items while oven bakes</li>
+      <li>Assembly line: prep all of one meal type at once</li>
+      <li>Partial prep: just proteins and grains if short on time</li>
+    </ul>
+    <h2>Storage Guidelines</h2>
+    <ul>
+      <li>Cooked proteins: 3–4 days</li>
+      <li>Cooked grains: 3–4 days</li>
+      <li>Cut vegetables: 3–5 days</li>
+      <li>Wraps/sandwiches: 1–2 days</li>
+      <li>Overnight oats/chia pudding: 4 days</li>
+      <li>Egg muffins: 4 days in fridge, up to 2 months frozen</li>
+    </ul>
+    <p>Some meals (like wraps) are best assembled the day of. Prep the components ahead to keep textures fresh.</p>
+  </div>
+
+  <script>
+  // Tabs
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.add('active');
+    });
+  });
+
+  // Accordions
+  document.querySelectorAll('.accordion').forEach(acc => {
+    acc.addEventListener('click', function () {
+      this.classList.toggle('active');
+      const panel = this.nextElementSibling;
+      panel.classList.toggle('show');
+    });
+  });
+</script>
+</body>
+</html>
