@@ -47,6 +47,8 @@
     }
   </style>
 </head>
+
+
 <body>
   <div class="tabs">
     <div class="tab-btn active" data-tab="tracker">Meal & Activity Tracker</div>
@@ -347,7 +349,7 @@
         <label><input type="checkbox" id="w5-c-4"> Lemon (1)</label><br>
       </div>
        <button class="accordion">Week 6 (April 28 - May 4)</button>
-<div class="panel">
+  <div class="panel">
   <h3>Proteins</h3>
   <label><input type="checkbox" id="w6-p-1"> Chicken breast (300g)</label><br>
   <label><input type="checkbox" id="w6-p-2"> Turkey mince (300g)</label><br>
@@ -582,6 +584,20 @@
       this.classList.toggle('active');
       const panel = this.nextElementSibling;
       panel.classList.toggle('show');
+    });
+  });
+
+ // ✅ Checkbox localStorage persistence
+  document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+    const id = checkbox.id;
+    // Load saved state
+    const saved = localStorage.getItem(id);
+    if (saved !== null) {
+      checkbox.checked = saved === 'true';
+    }
+    // Save state on change
+    checkbox.addEventListener('change', () => {
+      localStorage.setItem(id, checkbox.checked);
     });
   });
 </script>
