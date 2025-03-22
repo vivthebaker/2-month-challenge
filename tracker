@@ -143,7 +143,270 @@
     <label><input type="checkbox" id="w2-sun-x"> Exercise: Rest day</label><br>
   </div>
 
-  
+ <button class="accordion">Week 3: April 7 - April 13</button>
+  <div class="panel">
+    <h3>Monday, April 7</h3>
+    <label><input type="checkbox" id="w2-mon-b"> Breakfast: Peanut Butter & Banana Overnight Oats (26g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-l"> Lunch: Chicken & Avocado Wrap (42g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-d"> Dinner: Turkey & Sweet Potato Meal Prep (42g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Tuesday, April 8</h3>
+    <label><input type="checkbox" id="w2-mon-b"> Breakfast: Peanut Butter & Banana Overnight Oats (26g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-l"> Lunch: Chicken & Avocado Wrap (42g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-d"> Dinner: Turkey & Sweet Potato Meal Prep (42g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-x"> Exercise: 5K run</label><br>
+
+    <h3>Wednesday, April 9</h3>
+    <label><input type="checkbox" id="w2-wed-b"> Breakfast: Turkey & Spinach Egg Muffins (32g protein)</label><br>
+    <label><input type="checkbox" id="w2-wed-l"> Lunch: Turkey & Hummus Bagel Sandwich (38g protein)</label><br>
+    <label><input type="checkbox" id="w2-wed-d"> Dinner: Chicken & Quinoa Power Bowl (45g protein)</label><br>
+    <label><input type="checkbox" id="w2-wed-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Thursday, April 10</h3>
+    <label><input type="checkbox" id="w2-wed-b"> Breakfast: Turkey & Spinach Egg Muffins (32g protein)</label><br>
+    <label><input type="checkbox" id="w2-wed-l"> Lunch: Turkey & Hummus Bagel Sandwich (38g protein)</label><br>
+    <label><input type="checkbox" id="w2-wed-d"> Dinner: Chicken & Quinoa Power Bowl (45g protein)</label><br>
+    <label><input type="checkbox" id="w2-thu-x"> Exercise: 5K run</label><br>
+
+    <h3>Friday, April 11</h3>
+    <label><input type="checkbox" id="w2-fri-b"> Breakfast: Chia Pudding with Protein Powder & Berries (28g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-l"> Lunch: Salmon & Avocado Wrap (40g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-d"> Dinner: Baked Salmon with Roasted Sweet Potatoes & Asparagus (48g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Saturday, April 12</h3>
+    <label><input type="checkbox" id="w2-fri-b"> Breakfast: Chia Pudding with Protein Powder & Berries (28g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-l"> Lunch: Salmon & Avocado Wrap (40g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-d"> Dinner: Baked Salmon with Roasted Sweet Potatoes & Asparagus (48g protein)</label><br>
+    <label><input type="checkbox" id="w2-sat-x"> Exercise: 5K run</label><br>
+
+    <h3>Sunday, April 13</h3>
+    <label><input type="checkbox" id="w2-sun-b"> Breakfast: Almond Butter & Banana Protein Smoothie (28g protein)</label><br>
+    <label><input type="checkbox" id="w2-sun-l"> Lunch: Beef & Black Bean Pitta Pocket (44g protein)</label><br>
+    <label><input type="checkbox" id="w2-sun-d"> Dinner: Beef & Quinoa Stir-Fry with Vegetables (45g protein)</label><br>
+    <label><input type="checkbox" id="w2-sun-x"> Exercise: Rest day</label><br>
+  </div>
+
+ <button class="accordion">Week 4: April 14 - April 20</button>
+  <div class="panel">
+    <h3>Monday, April 14</h3>
+    <label><input type="checkbox" id="w2-mon-b"> Breakfast: Turkey & Spinach Egg Muffins (32g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-l"> Lunch: Salmon & Avocado Wrap (40g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-d"> Dinner: Chicken & Quinoa Power Bowl (45g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Tuesday, April 15</h3>
+    <label><input type="checkbox" id="w2-tue-b"> Breakfast: Chia Pudding with Protein Powder & Berries (28g protein)</label><br>
+    <label><input type="checkbox" id="w2-tue-l"> Lunch: Beef & Black Bean Pitta Pocket (44g protein)</label><br>
+    <label><input type="checkbox" id="w2-tue-d"> Dinner: TBaked Salmon with Roasted Sweet Potatoes & Asparagus (48g protein)</label><br>
+    <label><input type="checkbox" id="w2-tue-x"> Exercise: 5K run</label><br>
+
+    <h3>Wednesday, April 16</h3>
+    <label><input type="checkbox" id="w2-wed-b"> Breakfast: Coconut Yogurt with Protein & Granola (27g protein)</label><br>
+    <label><input type="checkbox" id="w2-wed-l"> Lunch: Turkey & Hummus Bagel Sandwich (38g protein)</label><br>
+    <label><input type="checkbox" id="w2-wed-d"> Dinner: Garlic Ginger Chicken with Brown Rice & Greens (50g protein)</label><br>
+    <label><input type="checkbox" id="w2-wed-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Thursday, April 17</h3>
+    <label><input type="checkbox" id="w2-thu-b"> Breakfast: Almond Butter & Banana Protein Smoothie (28g protein)</label><br>
+    <label><input type="checkbox" id="w2-thu-l"> Lunch: Chicken & Avocado Wrap (42g protein)</label><br>
+    <label><input type="checkbox" id="w2-thu-d"> Dinner: Turkey & Black Bean Chilli with Rice (42g protein)</label><br>
+    <label><input type="checkbox" id="w2-thu-x"> Exercise: 5K run</label><br>
+
+    <h3>Friday, April 18</h3>
+    <label><input type="checkbox" id="w2-fri-b"> Breakfast: Peanut Butter & Banana Overnight Oats (26g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-l"> Lunch: Spicy Tofu & Chickpea Pitta Pocket (36g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-d"> Dinner: Beef & Quinoa Stir-Fry with Vegetables (45g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Saturday, April 19</h3>
+    <label><input type="checkbox" id="w2-sat-b"> Breakfast: Chocolate Protein Pudding (26g protein)</label><br>
+    <label><input type="checkbox" id="w2-sat-l"> Lunch: Salmon & Brown Rice with Greens (44g protein)</label><br>
+    <label><input type="checkbox" id="w2-sat-d"> Dinner: Turkey & Sweet Potato Meal Prep (42g protein)</label><br>
+    <label><input type="checkbox" id="w2-sat-x"> Exercise: 5K run</label><br>
+
+    <h3>Sunday, April 20</h3>
+    <label><input type="checkbox" id="w2-sun-b"> Breakfast: Smoked Salmon & Avocado Bagel (30g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-sun-l"> Lunch: Spiced Lentil & Chickpea Salad with Chicken (38g protein)</label><br>
+    <label><input type="checkbox" id="w2-sun-d"> Dinner: Tofu & Chickpea Curry with Basmati Rice (38g protein)</label><br>
+    <label><input type="checkbox" id="w2-sun-x"> Exercise: Rest day</label><br>
+  </div>
+
+<button class="accordion">Week 5: April 21 - April 27</button>
+   <div class="panel">
+    <h3>Monday, April 21</h3>
+    <label><input type="checkbox" id="w1-mon-b"> Breakfast: Peanut Butter & Banana Overnight Oats (26g protein)</label><br>
+    <label><input type="checkbox" id="w1-mon-l"> Lunch: Chicken & Avocado Whole Wheat Wrap (42g protein)</label><br>
+    <label><input type="checkbox" id="w1-mon-d"> Dinner: Turkey & Sweet Potato Meal Prep (42g protein)</label><br>
+    <label><input type="checkbox" id="w1-mon-x"> Exercise: 30-minute mobility routine</label><br>
+    <h3>Tuesday, April 22</h3>
+    <label><input type="checkbox" id="w1-tue-b"> Breakfast: Turkey & Spinach Egg Muffins (32g protein)</label><br>
+    <label><input type="checkbox" id="w1-tue-l"> Lunch: Chicken & Avocado Whole Wheat Wrap (42g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-tue-d"> Dinner: Turkey & Sweet Potato Meal Prep (42g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-tue-x"> Exercise: 5K run</label><br>
+    <h3>Wednesday, April 23</h3>
+    <label><input type="checkbox" id="w1-wed-b"> Breakfast: Peanut Butter & Banana Overnight Oats (26g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-wed-l"> Lunch: Turkey & Hummus Bagel Sandwich (38g protein)</label><br>
+    <label><input type="checkbox" id="w1-wed-d"> Dinner: Chicken & Quinoa Power Bowl (45g protein)</label><br>
+    <label><input type="checkbox" id="w1-wed-x"> Exercise: 30-minute mobility routine</label><br>
+    <h3>Thursday, April 24</h3>
+    <label><input type="checkbox" id="w1-thu-b"> Breakfast: Turkey & Spinach Egg Muffins (32g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-thu-l"> Lunch: Turkey & Hummus Bagel Sandwich (38g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-thu-d"> Dinner: Chicken & Quinoa Power Bowl (45g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-thu-x"> Exercise: 5K run</label><br>
+    <h3>Friday, April 25</h3>
+    <label><input type="checkbox" id="w1-fri-b"> Breakfast: Chia Pudding with Protein Powder & Berries (28g protein)</label><br>
+    <label><input type="checkbox" id="w1-fri-l"> Lunch: Salmon & Avocado Wrap (40g protein)</label><br>
+    <label><input type="checkbox" id="w1-fri-d"> Dinner: Baked Salmon with Roasted Sweet Potatoes & Asparagus (48g protein)</label><br>
+    <label><input type="checkbox" id="w1-fri-x"> Exercise: 30-minute mobility routine</label><br>
+    <h3>Saturday, April 26</h3>
+    <label><input type="checkbox" id="w1-sat-b"> Breakfast: Chia Pudding with Protein Powder & Berries (28g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-sat-l"> Lunch: Salmon & Avocado Wrap (40g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-sat-d"> Dinner: Baked Salmon with Roasted Sweet Potatoes & Asparagus (48g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w1-sat-x"> Exercise: 5K run</label><br>
+    <h3>Sunday, April 27</h3>
+    <label><input type="checkbox" id="w1-sun-b"> Breakfast: Almond Butter & Banana Protein Smoothie (28g protein)</label><br>
+    <label><input type="checkbox" id="w1-sun-l"> Lunch: Beef & Black Bean Pitta Pocket (44g protein)</label><br>
+    <label><input type="checkbox" id="w1-sun-d"> Dinner: Beef & Quinoa Stir-Fry with Vegetables (45g protein)</label><br>
+    <label><input type="checkbox" id="w1-sun-x"> Exercise: Rest day</label><br>
+  </div>
+
+  <button class="accordion">Week 6: April 28 - May 4</button>
+ <div class="panel">
+    <h3>Monday, April 28</h3>
+    <label><input type="checkbox" id="w2-mon-b"> Breakfast: Almond Butter & Banana Protein Smoothie (28g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-mon-l"> Lunch: Beef & Black Bean Pitta Pocket (44g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-mon-d"> Dinner: Beef & Quinoa Stir-Fry with Vegetables (45g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-mon-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Tuesday, April 29</h3>
+    <label><input type="checkbox" id="w2-tue-b"> Breakfast: Coconut Yogurt with Protein & Granola (27g protein)</label><br>
+    <label><input type="checkbox" id="w2-tue-l"> Lunch: Spicy Tofu & Chickpea Pitta Pocket (36g protein)</label><br>
+    <label><input type="checkbox" id="w2-tue-d"> Dinner: Tofu & Chickpea Curry with Basmati Rice (38g protein)</label><br>
+    <label><input type="checkbox" id="w2-tue-x"> Exercise: 5K run</label><br>
+
+    <h3>Wednesday, April 30</h3>
+    <label><input type="checkbox" id="w2-wed-b"> Breakfast: Coconut Yogurt with Protein & Granola (27g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-wed-l"> Lunch: Spicy Tofu & Chickpea Pitta Pocket (36g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-wed-d"> Dinner: Tofu & Chickpea Curry with Basmati Rice (38g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-wed-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Thursday, May 1</h3>
+    <label><input type="checkbox" id="w2-thu-b"> Breakfast: Chocolate Protein Pudding (26g protein)</label><br>
+    <label><input type="checkbox" id="w2-thu-l"> Lunch: Turkey & Black Bean Chilli with Rice (42g protein)</label><br>
+    <label><input type="checkbox" id="w2-thu-d"> Dinner: Garlic Ginger Chicken with Brown Rice & Greens (50g protein)</label><br>
+    <label><input type="checkbox" id="w2-thu-x"> Exercise: 5K run</label><br>
+
+    <h3>Friday, May 2</h3>
+    <label><input type="checkbox" id="w2-fri-b"> Breakfast: Chocolate Protein Pudding (26g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-fri-l"> Lunch: Turkey & Black Bean Chilli with Rice (42g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-fri-d"> Dinner: Garlic Ginger Chicken with Brown Rice & Greens (50g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-fri-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Saturday, May 3</h3>
+    <label><input type="checkbox" id="w2-sat-b"> Breakfast: Smoked Salmon & Avocado Bagel (30g protein)</label><br>
+    <label><input type="checkbox" id="w2-sat-l"> Lunch: Salmon & Brown Rice with Greens (44g protein)</label><br>
+    <label><input type="checkbox" id="w2-sat-d"> Dinner: Spiced Lentil & Chickpea Salad with Chicken (38g protein)</label><br>
+    <label><input type="checkbox" id="w2-sat-x"> Exercise: 5K run</label><br>
+
+    <h3>Sunday, May 4</h3>
+    <label><input type="checkbox" id="w2-sun-b"> Breakfast: Smoked Salmon & Avocado Bagel (30g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-sun-l"> Lunch: Salmon & Brown Rice with Greens (44g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-sun-d"> Dinner: Spiced Lentil & Chickpea Salad with Chicken (38g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-sun-x"> Exercise: Rest day</label><br>
+  </div>
+
+ <button class="accordion">Week 7: May 5 - May 11</button>
+  <div class="panel">
+    <h3>Monday, May 5</h3>
+    <label><input type="checkbox" id="w2-mon-b"> Breakfast: Peanut Butter & Banana Overnight Oats (26g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-l"> Lunch: Chicken & Avocado Wrap (42g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-d"> Dinner: Turkey & Sweet Potato Meal Prep (42g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Tuesday, May 6</h3>
+    <label><input type="checkbox" id="w2-mon-b"> Breakfast: Peanut Butter & Banana Overnight Oats (26g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-l"> Lunch: Chicken & Avocado Wrap (42g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-d"> Dinner: Turkey & Sweet Potato Meal Prep (42g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-x"> Exercise: 5K run</label><br>
+
+    <h3>Wednesday, May 7</h3>
+    <label><input type="checkbox" id="w2-wed-b"> Breakfast: Turkey & Spinach Egg Muffins (32g protein)</label><br>
+    <label><input type="checkbox" id="w2-wed-l"> Lunch: Turkey & Hummus Bagel Sandwich (38g protein)</label><br>
+    <label><input type="checkbox" id="w2-wed-d"> Dinner: Chicken & Quinoa Power Bowl (45g protein)</label><br>
+    <label><input type="checkbox" id="w2-wed-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Thursday, May 8</h3>
+    <label><input type="checkbox" id="w2-wed-b"> Breakfast: Turkey & Spinach Egg Muffins (32g protein)</label><br>
+    <label><input type="checkbox" id="w2-wed-l"> Lunch: Turkey & Hummus Bagel Sandwich (38g protein)</label><br>
+    <label><input type="checkbox" id="w2-wed-d"> Dinner: Chicken & Quinoa Power Bowl (45g protein)</label><br>
+    <label><input type="checkbox" id="w2-thu-x"> Exercise: 5K run</label><br>
+
+    <h3>Friday, May 9</h3>
+    <label><input type="checkbox" id="w2-fri-b"> Breakfast: Chia Pudding with Protein Powder & Berries (28g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-l"> Lunch: Salmon & Avocado Wrap (40g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-d"> Dinner: Baked Salmon with Roasted Sweet Potatoes & Asparagus (48g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Saturday, May 10</h3>
+    <label><input type="checkbox" id="w2-fri-b"> Breakfast: Chia Pudding with Protein Powder & Berries (28g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-l"> Lunch: Salmon & Avocado Wrap (40g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-d"> Dinner: Baked Salmon with Roasted Sweet Potatoes & Asparagus (48g protein)</label><br>
+    <label><input type="checkbox" id="w2-sat-x"> Exercise: 5K run</label><br>
+
+    <h3>Sunday, May 11</h3>
+    <label><input type="checkbox" id="w2-sun-b"> Breakfast: Almond Butter & Banana Protein Smoothie (28g protein)</label><br>
+    <label><input type="checkbox" id="w2-sun-l"> Lunch: Beef & Black Bean Pitta Pocket (44g protein)</label><br>
+    <label><input type="checkbox" id="w2-sun-d"> Dinner: Beef & Quinoa Stir-Fry with Vegetables (45g protein)</label><br>
+    <label><input type="checkbox" id="w2-sun-x"> Exercise: Rest day</label><br>
+  </div>
+
+
+ <button class="accordion">Week 8: May 12 - 18</button>
+  <div class="panel">
+    <h3>Monday, May 12</h3>
+    <label><input type="checkbox" id="w2-mon-b"> Breakfast: Turkey & Spinach Egg Muffins (32g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-l"> Lunch: Salmon & Avocado Wrap (40g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-d"> Dinner: Chicken & Quinoa Power Bowl (45g protein)</label><br>
+    <label><input type="checkbox" id="w2-mon-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Tuesday, May 13</h3>
+    <label><input type="checkbox" id="w2-tue-b"> Breakfast: Chia Pudding with Protein Powder & Berries (28g protein)</label><br>
+    <label><input type="checkbox" id="w2-tue-l"> Lunch: Beef & Black Bean Pitta Pocket (44g protein)</label><br>
+    <label><input type="checkbox" id="w2-tue-d"> Dinner: TBaked Salmon with Roasted Sweet Potatoes & Asparagus (48g protein)</label><br>
+    <label><input type="checkbox" id="w2-tue-x"> Exercise: 5K run</label><br>
+
+    <h3>Wednesday, May 14</h3>
+    <label><input type="checkbox" id="w2-wed-b"> Breakfast: Coconut Yogurt with Protein & Granola (27g protein)</label><br>
+    <label><input type="checkbox" id="w2-wed-l"> Lunch: Turkey & Hummus Bagel Sandwich (38g protein)</label><br>
+    <label><input type="checkbox" id="w2-wed-d"> Dinner: Garlic Ginger Chicken with Brown Rice & Greens (50g protein)</label><br>
+    <label><input type="checkbox" id="w2-wed-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Thursday, May 15</h3>
+    <label><input type="checkbox" id="w2-thu-b"> Breakfast: Almond Butter & Banana Protein Smoothie (28g protein)</label><br>
+    <label><input type="checkbox" id="w2-thu-l"> Lunch: Chicken & Avocado Wrap (42g protein)</label><br>
+    <label><input type="checkbox" id="w2-thu-d"> Dinner: Turkey & Black Bean Chilli with Rice (42g protein)</label><br>
+    <label><input type="checkbox" id="w2-thu-x"> Exercise: 5K run</label><br>
+
+    <h3>Friday, May 16</h3>
+    <label><input type="checkbox" id="w2-fri-b"> Breakfast: Peanut Butter & Banana Overnight Oats (26g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-l"> Lunch: Spicy Tofu & Chickpea Pitta Pocket (36g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-d"> Dinner: Beef & Quinoa Stir-Fry with Vegetables (45g protein)</label><br>
+    <label><input type="checkbox" id="w2-fri-x"> Exercise: 30-minute mobility routine</label><br>
+
+    <h3>Saturday, May 17</h3>
+    <label><input type="checkbox" id="w2-sat-b"> Breakfast: Chocolate Protein Pudding (26g protein)</label><br>
+    <label><input type="checkbox" id="w2-sat-l"> Lunch: Salmon & Brown Rice with Greens (44g protein)</label><br>
+    <label><input type="checkbox" id="w2-sat-d"> Dinner: Turkey & Sweet Potato Meal Prep (42g protein)</label><br>
+    <label><input type="checkbox" id="w2-sat-x"> Exercise: 5K run</label><br>
+
+    <h3>Sunday, May 18</h3>
+    <label><input type="checkbox" id="w2-sun-b"> Breakfast: Smoked Salmon & Avocado Bagel (30g protein) Repeat</label><br>
+    <label><input type="checkbox" id="w2-sun-l"> Lunch: Spiced Lentil & Chickpea Salad with Chicken (38g protein)</label><br>
+    <label><input type="checkbox" id="w2-sun-d"> Dinner: Tofu & Chickpea Curry with Basmati Rice (38g protein)</label><br>
+    <label><input type="checkbox" id="w2-sun-x"> Exercise: Rest day</label><br>
+  </div>
     </div>
   
 
